@@ -1,0 +1,120 @@
+<style>
+        body {
+            font-family: cursive;
+            font-size: medium;
+        }
+        
+        h1 {
+            background-color: #87CEFA;
+            text-align: center;
+            padding: 5%;
+            margin: 0;
+            color: white;
+        }
+        
+        h2 {
+            text-align: left;
+        }
+        
+        nav {
+            background-color: black;
+            padding: 1%;
+            position: sticky;
+            top: 0px;
+            font-size: larger;
+            color: white;
+        }
+        
+        nav a:hover {
+            color: red;
+        }
+        
+        nav a {
+            color: white;
+            padding: 30px;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+        }
+
+	div#d3{
+  	   width: 100px;
+  	   height: 1000px;
+	}
+    
+div#d1{
+color : white;
+}
+
+::placeholder {
+    color: white;
+  }
+
+p{
+color: white; 
+}
+		
+.split {
+  height: 50%;
+  width: 50%;
+  position: fixed;
+ border: solid black;
+  top: 40%;
+  overflow-x: hidden;
+  padding-top: 0%;
+ margin: 10px;
+ 
+}
+
+.left {
+  left: -7px;
+  background-color: #FFA07A;
+}
+
+
+.right {
+  right: -22px;
+  background-color: #BDB76B;
+}
+
+    </style>
+
+
+
+<script>
+function lw()
+{
+x = document.getElementById("d1");
+
+
+z = document.getElementById("d3");
+
+x.innerHTML = z.value;
+
+}
+</script>
+
+
+
+<body>
+
+<h1>Live Interpreter</h1>
+
+<nav>
+        <a href="#">Overview</a>
+        <a href="#">What can i do</a>
+        <a href="#">About</a>
+</nav>
+
+<div class="split right">
+<div id="d1"> Output </div>
+</div>
+
+<div class="split left">
+<textarea id="d3" onkeyup="lw()" placeholder="Enter Code Here" rows="24" cols="100" 
+style="background-color:#FFA07A;">
+</textarea>
+<br />
+
+</body>
+</div>
